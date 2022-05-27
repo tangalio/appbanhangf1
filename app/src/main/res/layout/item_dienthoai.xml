@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_itemdt"
+            android:layout_weight="3"
+            android:src="@drawable/ic_icon_new"
+            android:layout_width="0dp"
+            android:layout_height="100dp"/>
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txt_itemdt_ten"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Tên sản phẩm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+<!--            <TextView-->
+<!--                android:id="@+id/txt_itemdt_idsp"-->
+<!--                android:gravity="center"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+            <TextView
+                android:id="@+id/txt_itemdt_gia"
+                android:textColor="#CCFF0000"
+                android:textSize="16sp"
+                android:text="Giá: 250000đ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+<!--            <TextView-->
+<!--                android:id="@+id/txt_itemdt_mota"-->
+<!--                android:textSize="14sp"-->
+<!--                android:text="Mô tả:"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
